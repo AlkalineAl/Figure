@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Figure.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Figure"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="layoutRoot" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:ConnectionId='2' Name="figureGrid" Margin="0,0,0,91" >
+            
+        </Grid>
+        <CommandBar VerticalAlignment="Bottom">
+            <CommandBar.Content>
+                <Grid Height="100"/>
+            </CommandBar.Content>
+            <AppBarButton x:ConnectionId='3' Icon="Emoji" Label="Круг"                           />
+            <AppBarButton x:ConnectionId='4' Icon="Emoji2" Label="Овал"                             />
+            <AppBarButton x:ConnectionId='5' Icon="NewWindow" Label="Квадрат"                             />
+            <AppBarButton x:ConnectionId='6' Icon="OpenPane" Label="Прямоугольник"                             />
+        </CommandBar>
+
+    </Grid>
+</Page>
+
